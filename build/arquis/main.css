@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #2a313a;
+  overflow-y: hidden;
+}
+header > .container section > .container {
+  padding-top: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  width: 100%;
+}
+@media (max-width:1023px) {
+  .container {
+    width: 80%;
+    max-width: 1023px;
+  }
+}
+@media (max-width:767px) {
+  .container {
+    width: 75%;
+  }
+}
+.image-principal {
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  max-width: 250px;
+}
+.title-page {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #dcdde1;
+}
+.subititle-page {
+  text-align: center;
+  color: #dcdde1;
+}
+li {
+  list-style: none;
+}
+.page-images-icon {
+  display: flex;
+  max-width: 280px;
+  width: 100%;
+  margin: 20px auto;
+}
+.page-images-icon .page-icon {
+  transition: all ease 0.2s;
+}
+.page-images-icon .page-icon:hover {
+  transform: scale(1.5);
+}
+.internal-jobs {
+  max-width: 800px;
+  width: 100%;
+  display: block;
+}
+.internal-jobs .page-button {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+  transition: all ease 0.2s;
+  background-color: #00a8ff;
+  color: #dcdde1;
+  border: none;
+}
+.internal-jobs .page-button:hover {
+  background-color: transparent;
+  border: 2px solid #00a8ff;
+  transform: scale(1.1);
+}
+section {
+  padding: 45px;
+}
+section .apis {
+  display: grid;
+  grid-template-columns: 340fr 340fr 340fr;
+  row-gap: 2%;
+  column-gap: 2%;
+}
+@media (max-width:767px) {
+  section .apis {
+    display: grid;
+    grid-template-columns: 25fr 25fr 25fr;
+    row-gap: 10%;
+    column-gap: 25%;
+  }
+}
+section .apis .text-apis {
+  text-align: center;
+  color: #dcdde1;
+  margin-top: 10px;
+}
+section .apis .img-apis {
+  max-width: 120px;
+  max-height: 100px;
+}
+@media (max-width:767px) {
+  section .apis .img-apis {
+    max-width: 80px;
+  }
+}
+section .apis .img-apis-2 {
+  max-height: 100px;
+}
+@media (max-width:767px) {
+  section .apis .img-apis-2 {
+    max-height: 65px;
+  }
+}
+footer {
+  text-align: center;
+  width: 100%;
+  background-color: #00a8ff;
+  padding: 27px;
+}
+@media (max-width:767px) {
+  footer {
+    padding: 12px;
+  }
+}
