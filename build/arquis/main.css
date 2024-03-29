@@ -90,10 +90,7 @@ section .apis {
 }
 @media (max-width:767px) {
   section .apis {
-    display: grid;
-    grid-template-columns: 25fr 25fr 25fr;
-    row-gap: 10%;
-    column-gap: 25%;
+    grid-template-rows: 25fr 25fr 25fr;
   }
 }
 section .apis .text-apis {
@@ -107,7 +104,7 @@ section .apis .img-apis {
 }
 @media (max-width:767px) {
   section .apis .img-apis {
-    max-width: 80px;
+    max-width: 50px;
   }
 }
 section .apis .img-apis-2 {
@@ -115,7 +112,8 @@ section .apis .img-apis-2 {
 }
 @media (max-width:767px) {
   section .apis .img-apis-2 {
-    max-height: 65px;
+    max-height: 45px;
+    margin: 0 35px;
   }
 }
 footer {

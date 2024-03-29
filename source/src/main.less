@@ -81,7 +81,6 @@ li{
             background-color: transparent;
             border: 2px solid #00a8ff;
             transform: scale(1.1);
-            
         }
     }
     
@@ -95,10 +94,7 @@ section{
         column-gap: 2%;
 
         @media @breakpointMobile{
-            display: grid;
-            grid-template-columns:25fr 25fr 25fr;
-            row-gap: 10%;
-            column-gap: 25%;
+            grid-template-rows:25fr 25fr 25fr;
         }
 
         .text-apis{
@@ -109,13 +105,14 @@ section{
             max-width: 120px;
             max-height: 100px;
             @media @breakpointMobile{
-                max-width: 80px;
+                max-width: 50px;
             }
         }
         .img-apis-2{
             max-height: 100px;
             @media @breakpointMobile{
-                max-height:65px;
+                max-height:45px;
+                margin: 0 35px;
             }
         }
     }
