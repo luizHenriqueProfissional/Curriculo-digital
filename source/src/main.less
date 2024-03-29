@@ -87,6 +87,9 @@ li{
 }
 section{
     padding: 45px;
+    @media @breakpointMobile{
+        height: 10%vh;
+    }
     .apis{
         display: grid;
         grid-template-columns:340fr 340fr 340fr;
@@ -94,7 +97,8 @@ section{
         column-gap: 2%;
 
         @media @breakpointMobile{
-            grid-template-rows:25fr 25fr 25fr;
+            row-gap: 1%;
+            column-gap: 1%;
         }
 
         .text-apis{

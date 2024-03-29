@@ -82,6 +82,11 @@ li {
 section {
   padding: 45px;
 }
+@media (max-width:767px) {
+  section {
+    height: 10%vh;
+  }
+}
 section .apis {
   display: grid;
   grid-template-columns: 340fr 340fr 340fr;
@@ -90,7 +95,8 @@ section .apis {
 }
 @media (max-width:767px) {
   section .apis {
-    grid-template-rows: 25fr 25fr 25fr;
+    row-gap: 1%;
+    column-gap: 1%;
   }
 }
 section .apis .text-apis {
