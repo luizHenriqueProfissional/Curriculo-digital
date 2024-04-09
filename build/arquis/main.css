@@ -6,10 +6,14 @@
 }
 body {
   background-color: #2a313a;
-  overflow-y: hidden;
+  margin-top: 200px;
+}
+@media (max-width:767px) {
+  body {
+    margin-top: 0;
+  }
 }
 header > .container section > .container {
-  padding-top: 60px;
   justify-content: space-between;
   align-items: center;
 }
@@ -82,16 +86,12 @@ li {
 section {
   padding: 45px;
 }
-@media (max-width:767px) {
-  section {
-    height: 10%vh;
-  }
-}
 section .apis {
   display: grid;
   grid-template-columns: 340fr 340fr 340fr;
   row-gap: 2%;
   column-gap: 2%;
+  padding-top: 40px;
 }
 @media (max-width:767px) {
   section .apis {
@@ -126,10 +126,17 @@ footer {
   text-align: center;
   width: 100%;
   background-color: #00a8ff;
-  padding: 27px;
+  padding: 45px;
+  margin-top: 210px;
 }
 @media (max-width:767px) {
   footer {
     padding: 12px;
+  }
+}
+@media (max-width:1023px) {
+  footer {
+    margin-top: 0;
+    padding: 20px;
   }
 }
